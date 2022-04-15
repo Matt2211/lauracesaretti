@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/chi-sono", {data:[{}],fetch:{},mutations:void 0});

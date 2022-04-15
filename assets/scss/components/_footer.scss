@@ -1,0 +1,42 @@
+footer {
+    background-color: #ebe8e8;
+    padding: 0 2%;
+    margin-top: 100px;
+
+    .footer-sections {
+        gap: 40px 0;
+    }
+
+    .rights {
+        font-size: 11px;
+    }
+
+    .footer-divider {
+        border-top: 1px solid #d4d4d4;
+    }
+
+    .footer-text-lighter {
+        color: #797979;
+    }
+
+    .matteofelicidesign {
+        color: #22a892 !important;
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 10px 0;
+         li {
+            color: #797979;
+            &:hover {
+                color: #222222;
+            }
+        }
+    }
+    
+   
+}
+
+

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/servizi-fotografici/maternit%C3%A0-life-style", {data:[{}],fetch:{},mutations:void 0});

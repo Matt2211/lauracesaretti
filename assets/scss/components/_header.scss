@@ -1,0 +1,41 @@
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    top: 0;
+    z-index: 999;
+
+    .main-menu {
+        align-items: center;
+        flex-direction: row;
+        gap: 0 30px;
+
+        li {
+            font-weight: 400;
+            letter-spacing: 3px;
+            transition: .4s all;
+            font-size: 13px;
+            border-bottom: 1px solid transparent;
+        }
+    }
+
+}
+
+.main-menu a:hover {
+    cursor: pointer;
+    color: black;
+    border-bottom: 2px solid black;
+    transition: .1s all;
+}
+
+a.nuxt-link-exact-active {
+    border-bottom: 2px solid black;
+}
+
+
+//  MOBILE MENU
+
+

@@ -1,0 +1,12 @@
+.related-products-container {
+    .related-products {
+        gap: 30px 0;
+    }
+
+    img {
+        transition: all 0.5s;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}

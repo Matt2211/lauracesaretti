@@ -1,0 +1,14 @@
+@import './layout/default';
+@import './layout/galleria';
+@import './layout/contatti';
+
+@import './base/fonts';
+
+@import './components/contact';
+@import './components/header';
+@import './components/footer';
+@import './components/related';
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
