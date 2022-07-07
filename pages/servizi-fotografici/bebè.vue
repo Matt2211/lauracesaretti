@@ -91,7 +91,7 @@
 
 <script>
 export default {
-  name: "bebè",
+  name: "Bebè",
    head: {
     title: "Bebè - Laura Cesaretti - Servizi Fotografici Roma"
   }

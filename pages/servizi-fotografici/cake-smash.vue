@@ -138,7 +138,7 @@
 
 <script>
 export default {
-  name: "cake-smash",
+  name: "Cake-smash",
   head: {
     title: "Cake Smash - Laura Cesaretti - Servizi Fotografici Roma"
   }

@@ -14,7 +14,7 @@
 
       <ul class="d-none d-lg-flex main-menu list-unstyled m-0" :class="isOnIndex && scrollY <= 200 ? 'text-light' : 'text-dark' ">
         <NuxtLink to="/chi-sono"><li class="text-uppercase">Chi sono</li></NuxtLink>
-        <NuxtLink to="/collezioni"><li class="text-uppercase">Servizi Fotografici</li></NuxtLink>
+        <NuxtLink to="/servizi"><li class="text-uppercase">Servizi Fotografici</li></NuxtLink>
         <NuxtLink to="/galleria"><li class="text-uppercase">Galleria</li></NuxtLink>
         <!-- <NuxtLink to="/regalo"><li class="ml-4 text-uppercase">Fai un Regalo</li></NuxtLink> -->
         <NuxtLink to="/contatti"><li class="text-uppercase">Contatti</li></NuxtLink>
@@ -41,7 +41,7 @@
      <div v-if="showMobileMenu" id="myNav" class="overlay d-flex align-items-center justify-content-center flex-column">
  
         <ul class="d-flex flex-column align-items-center justify-content-center main-menu list-unstyled m-0" style="gap: 30px;">
-        <NuxtLink to="/collezioni"><li class="text-uppercase">Servizi Fotografici</li></NuxtLink>
+        <NuxtLink to="/servizi"><li class="text-uppercase">Servizi Fotografici</li></NuxtLink>
         <NuxtLink to="/galleria"><li class="text-uppercase">Galleria</li></NuxtLink>
         <!-- <NuxtLink to="/regalo"><li class="ml-4 text-uppercase">Fai un Regalo</li></NuxtLink> -->
         <NuxtLink to="/contatti"><li class="text-uppercase">Contatti</li></NuxtLink>
