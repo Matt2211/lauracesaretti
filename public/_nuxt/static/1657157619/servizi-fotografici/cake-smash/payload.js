@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/servizi-fotografici/Cake-smash", {data:[{}],fetch:{},mutations:[]});
