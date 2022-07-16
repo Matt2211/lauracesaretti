@@ -120,7 +120,7 @@
       </div>
     </div>
 
-    <RelatedGallery />
+    <RelatedGallery categoryImage="FineArt" />
 
     <div id="book-fineart" class="container-fluid">
       <div class="container main-paragraph-container text-center">
@@ -142,9 +142,9 @@
 
 <script>
 export default {
-  name: "maternità-fine-art",
+  name: "Maternità-fine-art",
   head: {
     title: "Fine Art - Laura Cesaretti - Servizi Fotografici Roma",
-  }
+  },
 };
 </script>

@@ -90,6 +90,7 @@
       </div>
     </div>
 
+     <RelatedGallery categoryImage="LifeStyle" />
 
     <div id="book-lifestyle" class="container-fluid">
       <div class="container main-paragraph-container text-center">
@@ -104,7 +105,6 @@
       </div>
     </div>
 
-     <RelatedGallery />
     
     <Related categoryName="lifeStyle" data-aos="zoom-in" />
     <Footer />
@@ -113,35 +113,9 @@
 
 <script>
 export default {
-  name: "maternità-life-style",
+  name: "Maternità-life-style",
    head: {
     title: "Life Style - Laura Cesaretti - Servizi Fotografici Roma"
-  },
-  
- data: function () {
-    return {
-      index: null,
-      length: 9,
-    };
-  },
-   methods: {
-    loadMore() {
-      if (this.length > this.$store.state.gallery.images.length) return;
-      this.length = this.length + 6;
-      console.log(this.galleryImages.length)
-      console.log(this.length)
-    },
-  },
-  computed: {
-    galleryImages() {
-      return this.$store.state.gallery.images.filter(function (image) {
-       return image.category === "Lifestyle";
-      } )
-    },
-    imagesLoaded() {
-      return this.galleryImages.slice(0, this.length);
-      
-    },
   }
 };
 </script>

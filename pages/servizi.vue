@@ -177,7 +177,7 @@
         "
       >
         <h5 class="text-uppercase small">La gravidanza e la fotografia</h5>
-        <h2>Cake_Smash</h2>
+        <h2>Cake Smash</h2>
         <p>
           Ciao, sono Laura Cesaretti, fotografa specializzata in servizi
           fotografici per Neonati, Bambini, Maternità e Famiglie. Vivo e lavoro

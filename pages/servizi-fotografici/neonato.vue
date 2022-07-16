@@ -89,6 +89,8 @@ interamente personalizzata sulle esigente dei vostri piccoli, in modo che siano 
       </div>
     </div>
 
+     <RelatedGallery categoryImage="Neonato" />
+
     <div id="book-neonato" class="container-fluid">
       <div class="container main-paragraph-container text-center">
         <h3 class="mb-4">Ti Senti Pronta?</h3>

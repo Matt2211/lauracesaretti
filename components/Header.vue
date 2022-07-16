@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="header shadow-sm" :class="isOnIndex && scrollY <= 200 ? 'bg-transparent' : 'bg-light'">
+    <div class="header" :class="isOnIndex && scrollY <= 200 ? 'bg-transparent' : 'bg-light shadow-sm'">
       <NuxtLink to="/">
         <h4 class="text-decoration-none mb-0">
-          Laura Cesaretti 
+          Laura Cesaretti
           <!-- <span class="home-headline">Fine Art Portrait Photography</span> -->
         </h4>
       </NuxtLink>

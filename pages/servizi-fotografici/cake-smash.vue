@@ -116,7 +116,7 @@
       </div>
     </div>
 
-    <RelatedGallery categoryName="CakeSmash" />
+     <RelatedGallery categoryImage="CakeSmash" />
 
     <div id="book-cakesmash" class="container-fluid">
       <div class="container main-paragraph-container text-center">
@@ -143,30 +143,6 @@ export default {
   name: "Cake-smash",
   head: {
     title: "Cake Smash - Laura Cesaretti - Servizi Fotografici Roma"
-  },
-   data: function () {
-    return {
-      index: null,
-      length: 9,
-    };
-  },
-    methods: {
-    loadMore() {
-      if (this.length > this.$store.state.gallery.images.length) return;
-      this.length = this.length + 6;
-      console.log(this.galleryImages.length);
-      console.log(this.length);
-    },
-  },
-  computed: {
-    galleryImages() {
-      return this.$store.state.gallery.images.filter(function (image) {
-        return image.category === "CakeSmash";
-      });
-    },
-    imagesLoaded() {
-      return this.galleryImages.slice(0, this.length);
-    },
-  },
+  }
 };
 </script>

@@ -69,6 +69,8 @@
       </div>
     </div>
 
+     <RelatedGallery categoryImage="Bebè" />
+
     <div id="book-bebe" class="container-fluid">
       <div class="container main-paragraph-container text-center">
         <h3 class="mb-4">Ti Senti Pronta?</h3>
