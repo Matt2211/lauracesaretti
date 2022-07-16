@@ -68,6 +68,8 @@
       </div>
     </div>
 
+   
+
     <div data-aos="zoom-in" class="container my-5 category-container w-100">
       <div class="service-description w-100 text-center text-md-right order-1 order-md-0 pr-0 mt-3 pr-md-5 mt-lg-0">
         <h5 class=" text-uppercase small">La gravidanza e la fotografia</h5>
@@ -88,6 +90,7 @@
       </div>
     </div>
 
+
     <div id="book-lifestyle" class="container-fluid">
       <div class="container main-paragraph-container text-center">
         <h3 class="mb-4">Ti Senti Pronta?</h3>
@@ -101,6 +104,7 @@
       </div>
     </div>
 
+     <RelatedGallery />
     
     <Related categoryName="lifeStyle" data-aos="zoom-in" />
     <Footer />
@@ -112,6 +116,32 @@ export default {
   name: "maternità-life-style",
    head: {
     title: "Life Style - Laura Cesaretti - Servizi Fotografici Roma"
+  },
+  
+ data: function () {
+    return {
+      index: null,
+      length: 9,
+    };
+  },
+   methods: {
+    loadMore() {
+      if (this.length > this.$store.state.gallery.images.length) return;
+      this.length = this.length + 6;
+      console.log(this.galleryImages.length)
+      console.log(this.length)
+    },
+  },
+  computed: {
+    galleryImages() {
+      return this.$store.state.gallery.images.filter(function (image) {
+       return image.category === "Lifestyle";
+      } )
+    },
+    imagesLoaded() {
+      return this.galleryImages.slice(0, this.length);
+      
+    },
   }
 };
 </script>

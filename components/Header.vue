@@ -92,14 +92,3 @@
         }
     }
 </script>
-
-
-<style lang="scss">
-.overlay {
-  background-color: #ffffff;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-</style>

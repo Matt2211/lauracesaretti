@@ -96,6 +96,11 @@
     </div>
 
 
+
+      
+ <!-- <Feedback /> -->
+
+
     <div class="container-fluid p-0">
       <div class="d-flex flex-wrap">
         <div class="col-12 col-md-4 p-0 index-wrapper">
@@ -140,32 +145,7 @@
 
 
 
-    <!-- <div class="category-container w-100">
-      <NuxtLink to="/servizi-fotografici/neonato" class="w-100">
-       <div class="wrapper-test">
-        <div id="neonato" class="category-section w-100">
-          <h2 class="category-title">Neonato</h2>
-         
-        </div>
-        </div>
-      </NuxtLink>
-      <NuxtLink to="/servizi-fotografici/bebè" class="w-100">
-       <div class="wrapper-test">
-        <div id="bebe" class="category-section w-100">
-          <h2 class="category-title">Bebè</h2>
-         
-        </div>
-        </div>
-      </NuxtLink>
-      <NuxtLink to="/servizi-fotografici/cake-smash" class="w-100">
-       <div class="wrapper-test">
-        <div id="cakeSmash" class="category-section w-100">
-          <h2 class="category-title">Cake Smash</h2>
-         
-        </div>
-        </div>
-      </NuxtLink>
-    </div> -->
+
 
     
     <div class="container main-paragraph-container text-center">
@@ -186,10 +166,12 @@
 </template>
 
 <script>
+import Feedback from '~/components/Feedback.vue';
 
 
 
 export default {
+  components: { Feedback },
   name: "Home",
   head: {
     title: "Laura Cesaretti - Fine Art Portrait Photography - Roma"

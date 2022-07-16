@@ -1,6 +1,6 @@
 <template>
     <div :categoryName="categoryName" class="related-products-container">
-    <div class="container pt-5">
+    <div class="container py-5 my-5">
       <div class="row text-center flex-column mb-4">
         <h4>Non e il servizio fotografico <br class="d-md-none"> adatto a te?</h4>
         <p class="lead">Prova a controllare anche:</p>
