@@ -1,5 +1,5 @@
 <template>
-<div>
+  <div>
     <Header />
     <div class="banner-hero-inner">
       <div class="text-center">
@@ -8,23 +8,13 @@
       </div>
     </div>
 
-    
-
-    
-
-    
-
-    <div class="container-fluid">
-    
-      
+    <div class="container mb-5">
       <div class="container">
         <Contacts optionsEnabled />
       </div>
     </div>
 
-   
-
-     <!-- <Related categoryName="" data-aos="zoom-in" /> -->
+    <!-- <Related categoryName="" data-aos="zoom-in" /> -->
     <Footer />
   </div>
 </template>
@@ -33,7 +23,7 @@
 export default {
   name: "contatti",
   head: {
-    title: "Contatti - Laura Cesaretti - Servizi Fotografici Roma"
+    title: "Contatti - Laura Cesaretti - Portrait Photograpy Roma",
   },
 };
 </script>
