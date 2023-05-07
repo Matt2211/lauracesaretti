@@ -9,6 +9,7 @@ html {
 a {
   color: inherit !important;
   text-decoration: none;
+
   &:hover {
     text-decoration: none !important;
   }
@@ -28,14 +29,15 @@ a {
   background-repeat: no-repeat;
 
   h1 {
-    font-family: "Nothing You Could Do";
+    font-family: "Poppins";
   }
+
   h2 {
     font-family: "Poppins";
     letter-spacing: 3px;
     text-transform: uppercase;
     display: block;
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 
@@ -69,7 +71,7 @@ a {
       }
 
       h2 {
-        font-family: "Nothing You Could Do";
+        font-family: "Poppins";
         font-size: 42px;
       }
     }
@@ -92,7 +94,8 @@ a {
   }
 
   .category-title {
-    color: white; /* Good thing we set a fallback color! */
+    color: white;
+    /* Good thing we set a fallback color! */
     font-family: sans-serif;
     padding: 25%;
     position: absolute;
@@ -105,6 +108,7 @@ a {
       opacity: 1 !important;
     }
   }
+
   .category-section:hover .category-title,
   .category-section:focus .category-title {
     opacity: 1;
@@ -114,15 +118,19 @@ a {
   #fineArt {
     background-image: url(~assets/images/Laura_Cesaretti_Photography_Fine_Art.jpg);
   }
+
   #lifeStyle {
     background-image: url(~assets/images/Laura_Cesaretti_Maternità_Life_Style.jpg);
   }
+
   #neonato {
     background-image: url(~assets/images/Laura_Cesaretti_Photography_Neonato.jpg);
   }
+
   #bebe {
     background-image: url(~assets/images/Laura_Cesaretti_Photography_Bebè.jpg);
   }
+
   #cakeSmash {
     background-image: url(~assets/images/Laura_Cesaretti_Photography_Cake_Smash.jpg);
   }
@@ -150,22 +158,35 @@ a {
   justify-content: center;
   position: relative;
   align-items: center;
+
   h2 {
     z-index: 999;
-    font-family: "Nothing You Could Do";
+    font-family: "Poppins";
     font-size: 42px;
+  }
+
+  p {
+    font-family: "Poppins";
+    z-index: 999;
+    font-size: 16px;
+    display: none;
+    margin-top: 100px;
   }
 
   img {
     transform: scale(1);
-    transition: all 0.5s;
+    transition: ease-in-out 0.5s;
     filter: brightness(50%);
   }
-  
+
   &:hover {
     img {
       transform: scale(1.2);
       filter: brightness(100%);
+    }
+
+    p {
+      display: block;
     }
   }
 }
@@ -187,16 +208,21 @@ a {
   justify-content: center;
   height: 50vh;
   width: 100%;
+  background: rgb(231, 225, 218);
+  background: linear-gradient(180deg,
+      rgba(231, 225, 218, 1) 0%,
+      rgba(255, 255, 255, 1) 100%);
 
   h1 {
-    font-family: "Nothing You Could Do";
+    font-family: "Poppins";
   }
+
   h2 {
     font-family: "Poppins";
     letter-spacing: 3px;
     text-transform: uppercase;
     display: block;
-    font-size: 18px;
+    font-size: 12px;
   }
 }
 
@@ -204,97 +230,15 @@ a {
   h2 {
     margin-bottom: 20px;
   }
+
   p {
     font-weight: 300;
   }
+
   h5 {
     color: #75245a;
   }
 }
-
-#banner-fineart {
-  background: rgb(243, 221, 188);
-  background: linear-gradient(
-    180deg,
-    rgba(243, 221, 188, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-}
-#banner-lifestyle {
-  background: rgb(231, 225, 218);
-  background: linear-gradient(
-    180deg,
-    rgba(231, 225, 218, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-}
-#banner-neonato {
-  background: rgb(201, 231, 206);
-  background: linear-gradient(
-    180deg,
-    rgba(201, 231, 206, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-}
-#banner-bebe {
-  background: rgb(245, 215, 243);
-  background: linear-gradient(
-    180deg,
-    rgba(245, 215, 243, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-}
-#banner-cakesmash {
-  background: rgb(192, 231, 241);
-  background: linear-gradient(
-    180deg,
-    rgba(192, 231, 241, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-}
-
-#book-fineart {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(243, 221, 188, 1) 100%
-  );
-}
-#book-lifestyle {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(231, 225, 218, 1) 100%
-  );
-}
-#book-neonato {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(201, 231, 206, 1) 100%
-  );
-}
-#book-bebe {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(245, 215, 243, 1) 100%
-  );
-}
-#book-cakesmash {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(192, 231, 241, 1) 100%
-  );
-}
-
-
 
 
 // CAROUSEL
@@ -305,4 +249,10 @@ a {
 
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+// btn
+
+.btn {
+  box-shadow: none !important;
 }

@@ -6,34 +6,41 @@
     width: 100%;
     padding: 20px;
     top: 0;
-    z-index: 999;
+    z-index: 1000;
     transition: 1s;
+
+    .logo {
+        border-bottom: none;
+    }
 
     .main-menu {
         align-items: center;
         flex-direction: row;
         gap: 0 30px;
 
-        li {
-            font-weight: 400;
-            letter-spacing: 3px;
+        li,
+        .dropdown-toggle {
+            font-weight: 500;
             transition: .4s all;
-            font-size: 13px;
-            border-bottom: 1px solid transparent;
+            font-size: 16px;
+
+            a.nuxt-link-exact-active {
+                color: black !important;
+            }
         }
+
     }
 
 }
 
 .main-menu a:hover {
     cursor: pointer;
-    color: black;
-    border-bottom: 2px solid black;
+    color: black !important;
     transition: .1s all;
 }
 
 a.nuxt-link-exact-active {
-    border-bottom: 2px solid black;
+    color: black !important;
 }
 
 
@@ -45,4 +52,26 @@ a.nuxt-link-exact-active {
     position: fixed;
     height: 100vh;
     width: 100%;
-  }
+}
+
+// Dropdown
+
+.btn-link {
+    color: inherit !important;
+    box-shadow: none !important;
+}
+
+.dropdown-menu {
+    padding: 10px !important;
+
+    .dropdown-item {
+        border-radius: 4px;
+        padding: 4px 10px !important;
+        color: #6c757d !important;
+
+        &:active {
+            background-color: transparent;
+            color: black !important;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 <template>
   <div class="container mt-5">
-    <b-button v-b-modal.modal-center variant="dark" class="d-block m-auto btn-lg"
+    <b-button v-b-modal.modal-center variant="dark" class="d-block m-auto"
       >Richiedi Preventivo</b-button
     >
 

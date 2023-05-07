@@ -1,6 +1,10 @@
 footer {
-    background-color: #ebe8e8;
     padding: 0 2%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(231, 225, 218, 1) 100%);
+
 
     .footer-sections {
         gap: 40px 0;
@@ -27,15 +31,14 @@ footer {
         flex-direction: column;
         margin-top: 10px;
         gap: 10px 0;
-         li {
+
+        li {
             color: #797979;
+
             &:hover {
                 color: #222222;
             }
         }
     }
-    
-   
+
 }
-
-

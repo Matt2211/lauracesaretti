@@ -1,0 +1,10 @@
+{
+  "name": "lauracesaretti",
+  "short_name": "lauracesaretti",
+  "description": "## Build Setup",
+  "icons": [],
+  "start_url": "/public/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "lang": "en"
+}

@@ -3,8 +3,8 @@
     <Header isOnIndex />
     <div class="banner-hero">
       <div class="text-center text-white">
-        <h1 class="display-1">Laura Cesaretti</h1>
-        <h2>Fine Art Portrait Photography</h2>
+        <h1 class="display-1">Ritratti artistici di maternità</h1>
+        <h2>Ritraggo la gravidanza e il tuo bambino come fossero opere d'arte.</h2>
       </div>
     </div>
 
@@ -25,7 +25,7 @@
 
     <!-- <div class="category-container w-100">
      
-      <NuxtLink to="/servizi-fotografici/maternità-fine-art" class="w-100">
+      <NuxtLink to="/servizi-fotografici/maternità" class="w-100">
         <div class="wrapper-test">
           <div id="fineArt" class="category-section w-100">
             <h2 class="category-title">Fine Art</h2>
@@ -35,7 +35,7 @@
         </div>
       </NuxtLink>
 
-      <NuxtLink to="/servizi-fotografici/maternità-life-style" class="w-100">
+      <NuxtLink to="/servizi-fotografici/famiglia" class="w-100">
         <div class="wrapper-test">
           <div id="lifeStyle" class="category-section w-100">
             <h2 class="category-title">Life Style</h2>
@@ -48,37 +48,27 @@
 
     <div class="container-fluid p-0">
       <div class="d-flex flex-wrap">
-        
-        
-          <div class="col-12 col-md-6 p-0 index-wrapper">
-            <NuxtLink to="/servizi-fotografici/maternità-fine-art">
-            <div class="col-12 p-0 index-img-wrapper">
-              
-              <h2 class="text-white position-absolute text-center w-100">Fine Art</h2>
-              <img src="~assets/images/Laura_Cesaretti_Photography_Fine_Art.jpg" class="img-fluid h-100 w-100" alt="">
-              
-            </div>
-             </NuxtLink>
-          </div>
-       
-       
-        
-         <div class="col-12 col-md-6 p-0 index-wrapper">
-           <NuxtLink to="/servizi-fotografici/maternità-life-style">
-          <div class="col-12 p-0 index-img-wrapper">
-            
-            <h2 class="text-white position-absolute text-center w-100">Life Style</h2>
-            <img src="~assets/images/Laura_Cesaretti_Maternità_Life_Style.jpg" class="img-fluid h-100 w-100" alt="">
-            
-          </div>
-           </NuxtLink>
-        </div>
-       
+        <Sections
+          link="/servizi-fotografici/maternità"
+          :image="`${require(`~/assets/images/Laura_Cesaretti_Photography_Fine_Art.jpg`)}`"
+          alt="text here"
+          title="Maternità"
+        >
+        </Sections>
+        <Sections
+          link="/servizi-fotografici/famiglia"
+          :image="`${require(`~/assets/images/Laura_Cesaretti_Maternità_Life_Style.jpg`)}`"
+          alt="text here"
+          title="Famiglia"
+        >
+        </Sections>
 
+       
+        
+
+      
       </div>
     </div>
-
-
 
     <div class="container main-paragraph-container text-center">
       <h3 class="mb-4">Title will go here</h3>
@@ -95,59 +85,42 @@
       </p>
     </div>
 
-
-
-      
- <!-- <Feedback /> -->
-
+    <!-- <Feedback /> -->
 
     <div class="container-fluid p-0">
       <div class="d-flex flex-wrap">
-        <div class="col-12 col-md-4 p-0 index-wrapper">
-          <NuxtLink to="/servizi-fotografici/Neonato">
-          <div class="col-12 p-0 index-img-wrapper">
-            
-            <h2 class="text-white position-absolute text-center w-100">Neonato</h2>
-            <img src="~assets/images/Laura_Cesaretti_Photography_Neonato.jpg" class="img-fluid h-100 w-100" alt="">
-            
-          </div>
-          </NuxtLink>
-        </div>
-       
-       
-       
-         <div class="col-12 col-md-4 p-0 index-wrapper">
-           <NuxtLink to="/servizi-fotografici/bebè">
-          <div class="col-12 p-0 index-img-wrapper">
-            
-            <h2 class="text-white position-absolute text-center w-100">Bebè</h2>
-            <img src="~assets/images/Laura_Cesaretti_Photography_Bebè.jpg" class="img-fluid h-100 w-100" alt="">
-            
-          </div>
-           </NuxtLink>
-        </div>
 
+          <Sections
+          isSmall
+          link="/servizi-fotografici/neonato"
+          :image="`${require(`~/assets/images/Laura_Cesaretti_Photography_Neonato.jpg`)}`"
+          alt="text here"
+          title="Neonato"
+        >
+        </Sections>
 
-        <div class="col-12 col-md-4 p-0 index-wrapper">
-          <NuxtLink to="/servizi-fotografici/cake-smash">
-          <div class="col-12 p-0 index-img-wrapper">
-            
-            <h2 class="text-white position-absolute text-center w-100">Cake Smash</h2>
-            <img src="~assets/images/Laura_Cesaretti_Photography_Cake_Smash.jpg" class="img-fluid h-100 w-100" alt="">
-            
-          </div>
-          </NuxtLink>
-        </div>
+          <Sections
+          isSmall
+          link="/servizi-fotografici/bebè"
+          :image="`${require(`~/assets/images/Laura_Cesaretti_Photography_Bebè.jpg`)}`"
+          alt="text here"
+          title="Bebè"
+        >
+        </Sections>
+
+          <Sections
+          isSmall
+          link="/servizi-fotografici/cake-smash"
+          :image="`${require(`~/assets/images/Laura_Cesaretti_Photography_Cake_Smash.jpg`)}`"
+          alt="text here"
+          title="Cake Smash"
+        >
+        </Sections>
 
 
       </div>
     </div>
 
-
-
-
-
-    
     <div class="container main-paragraph-container text-center">
       <h3 class="mb-4">Guarda alcuni dei scatti piu belli</h3>
       <p class="lead">
@@ -166,15 +139,13 @@
 </template>
 
 <script>
-import Feedback from '~/components/Feedback.vue';
-
-
+import Feedback from "~/components/Feedback.vue";
 
 export default {
   components: { Feedback },
   name: "Home",
   head: {
-    title: "Laura Cesaretti - Fine Art Portrait Photography - Roma"
-  }
+    title: "Laura Cesaretti - Fine Art Portrait Photography - Roma",
+  },
 };
 </script>

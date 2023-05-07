@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div data-aos="zoom-in">
     <div class="container py-4">
-        <h2 class="text-center mb-5">Titolo galleria qui</h2>
+        <h2 class="text-center mb-5">Dai un'occhiata alla galleria {{ categoryImage }}.</h2>
       <div class="gallery mb-5">
         <div
           class="gallery-img"
@@ -14,7 +14,7 @@
       </div>
       <button
         v-if="this.length < this.pickGallery.length"
-        class="btn btn-dark d-flex m-auto"
+        class="btn d-flex m-auto btn-outline-dark"
         @click="loadMore"
       >
         Mostra altre foto
@@ -22,7 +22,6 @@
       <p class="text-secondary small text-center" v-else>
         Tutte le foto sono state caricate
       </p>
-      <hr class="mt-5" />
     </div>
 
     <no-ssr>
@@ -59,13 +58,13 @@ export default {
   },
   computed: {
     pickGallery() {
-      if (this.categoryImage === "FineArt") {
+      if (this.categoryImage === "Maternità") {
         return this.$store.state.gallery.images.filter(function (image) {
-          return image.category === "FineArt";
+          return image.category === "Maternità";
         });
-      } else if (this.categoryImage === "LifeStyle") {
+      } else if (this.categoryImage === "Famiglia") {
         return this.$store.state.gallery.images.filter(function (image) {
-          return image.category === "LifeStyle";
+          return image.category === "Famiglia";
         });
       } else if (this.categoryImage === "Neonato") {
         return this.$store.state.gallery.images.filter(function (image) {
