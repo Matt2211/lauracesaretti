@@ -3,10 +3,9 @@
     <BannerHero title="Bebè" subTitle="I loro primi ricordi" />
 
     <ServiceSection service="Bebè" />
+    <Quote service="Bebè" categoryName="Bebè" />
 
     <RelatedGallery categoryImage="Bebè" />
-
-    <Quote categoryName="Bebè" data-aos="zoom-in" />
 
     <Related categoryName="bebè" data-aos="zoom-in" />
   </div>

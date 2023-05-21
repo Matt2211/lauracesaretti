@@ -1,5 +1,5 @@
 <template>
-  <div class="container service-section-wrapper">
+  <div class="container service-section-wrapper overflow-hidden">
     <div
       v-for="service in showServiceSetcion"
       :key="service.id"
@@ -32,7 +32,7 @@
         <p v-if="service.note" class="note mb-0">{{ service.note }}</p>
       </div>
 
-      <div class="service-section bg-danger">
+      <div class="service-section">
         <img :src="service.image" class="img-fluid" alt="" />
       </div>
     </div>
@@ -82,6 +82,10 @@ export default {
       } else if (this.service === "CakeSmash") {
         return this.$store.state.services.sections.filter(function (item) {
           return item.category === "CakeSmash";
+        });
+      } else if (this.service === "Bio") {
+        return this.$store.state.services.sections.filter(function (item) {
+          return item.category === "Bio";
         });
       }
     },

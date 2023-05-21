@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/servizi-fotografici/famiglia", {data:[{}],fetch:{},mutations:[]});

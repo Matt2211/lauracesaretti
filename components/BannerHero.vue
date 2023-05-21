@@ -1,5 +1,12 @@
 <template>
-  <div data-aos="fade-in" class="banner-hero-inner">
+  <div
+    data-aos="fade-in"
+    class="banner-hero" 
+    :class="{
+      'home' : isOnIndex === true,
+      'service' : isOnIndex === false,
+    }"
+    >
     <div class="text-center">
       <h1 class="display-1">{{ title }}</h1>
       <h2>{{ subTitle }}</h2>
@@ -19,6 +26,10 @@ export default {
       type: String,
       reuqired: true,
     },
+    isOnIndex: {
+      type: Boolean,
+      reuqired: false,
+    }
   },
 };
 </script>

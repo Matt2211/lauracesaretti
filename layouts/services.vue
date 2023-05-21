@@ -1,6 +1,7 @@
 <template>
   <div>
-    <Header />
+    <!-- <Header /> -->
+    <HeaderMobile />
    
     <Nuxt />
 

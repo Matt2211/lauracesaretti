@@ -1,12 +1,11 @@
 <template>
   <div>
     <BannerHero title="Famiglia" subTitle="Non c'è nulla di più prezioso" />
-    
+
     <ServiceSection service="Famiglia" />
+    <Quote service="Famiglia" categoryName="Famiglia" />
 
     <RelatedGallery categoryImage="Famiglia" />
-
-    <Quote categoryName="Famiglia" data-aos="zoom-in" />
 
     <Related categoryName="famiglia" data-aos="zoom-in" />
   </div>

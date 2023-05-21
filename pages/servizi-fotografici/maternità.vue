@@ -1,12 +1,14 @@
 <template>
   <div>
-    <BannerHero title="Maternità" subTitle="La fase più imortante della tua vita" />
+    <BannerHero
+      title="Maternità"
+      subTitle="La fase più imortante della tua vita"
+    />
 
     <ServiceSection service="Maternità" />
+    <Quote service="Maternità" categoryName="Maternità" />
 
     <RelatedGallery categoryImage="Maternità" />
-
-    <Quote categoryName="Maternità" data-aos="zoom-in" />
 
     <Related categoryName="maternità" data-aos="zoom-in" />
   </div>

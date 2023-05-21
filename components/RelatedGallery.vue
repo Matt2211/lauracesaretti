@@ -1,8 +1,12 @@
 <template>
-  <div data-aos="zoom-in">
-    <div class="container py-4">
-        <h2 class="text-center mb-5">Dai un'occhiata alla galleria {{ categoryImage }}.</h2>
-      <div class="gallery mb-5">
+  <div class="related-gallery-wrapper">
+    <div class="container">
+      <h4 class="text-center display-4">
+        Galleria {{ categoryImage }}.
+      </h4>
+
+      <div class="gallery related-gallery-container">
+       
         <div
           class="gallery-img"
           v-for="(image, imageIndex) in imagesLoaded"
@@ -11,7 +15,14 @@
         >
           <img :src="image.url" class="img-fluid rounded" :alt="image.title" />
         </div>
+
+
+
       </div>
+
+
+
+
       <button
         v-if="this.length < this.pickGallery.length"
         class="btn d-flex m-auto btn-outline-dark"
@@ -78,7 +89,7 @@ export default {
         return this.$store.state.gallery.images.filter(function (image) {
           return image.category === "CakeSmash";
         });
-      } 
+      }
     },
 
     imagesLoaded() {

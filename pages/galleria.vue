@@ -1,15 +1,14 @@
 <template>
   <div>
-    <Header />
-    <div class="banner-hero-inner">
-      <div class="text-center">
-        <h1 class="display-1">Galleria</h1>
-        <h2>Dobbiamo scrivere qualcosa qui d'impatto</h2>
-      </div>
-    </div>
+    <BannerHero
+      title="Galleria"
+      subTitle="Dobbiamo scrivere qualcosa qui d'impatto"
+    />
 
     <div class="container">
-      <ul class=" list-unstyled d-flex align-items-center justify-content-between">
+      <ul
+        class="list-unstyled d-flex align-items-center justify-content-between"
+      >
         <li>Tutte</li>
         <li>Fine Art</li>
         <li>Life Style</li>
@@ -48,18 +47,19 @@
 <script>
 export default {
   name: "galleria",
+  layout: "services",
   data: function () {
     return {
-      index: null
+      index: null,
     };
   },
-  
+
   computed: {
     galleryImages() {
       return this.$store.state.gallery.images.filter(function (image) {
-        return image.all === true
-      } )
-    }
-  }
+        return image.all === true;
+      });
+    },
+  },
 };
 </script>

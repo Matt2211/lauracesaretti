@@ -1,12 +1,16 @@
 <template>
   <div>
-    <BannerHero title="Neonato" subTitle="Saranno cosi piccoli una sola volta" />
+    <BannerHero
+      title="Neonato"
+      subTitle="Saranno cosi piccoli una sola volta"
+    />
 
     <ServiceSection service="Neonato" />
+    <Quote service="Neonato" categoryName="Neonato" />
 
-    <RelatedGallery categoryImage="Neonato" />
 
-    <Quote categoryName="Neonato" data-aos="zoom-in" />
+     <RelatedGallery categoryImage="Neonato" />
+  
 
     <Related categoryName="neonato" data-aos="zoom-in" />
   </div>

@@ -126,7 +126,7 @@
         ></textarea>
       </div>
       <div class="w-100 d-flex align-items-center justify-content-between">
-        <p class="small mb-0">
+        <p class="small mb-0" style="font-size: 10px;">
           I campi contrassegnati con "*" sono obbligatori.
         </p>
         <button type="submit" class="btn btn-dark d-block ml-auto btn-sm">
@@ -166,7 +166,7 @@ export default {
     sendEmail() {
       emailjs
         .sendForm(
-          "service_0smn389",
+          "service_nny7of9",
           "template_nv4dhfd",
           this.$refs.form,
           "Wv-_Y_OTYnAimnkVi"

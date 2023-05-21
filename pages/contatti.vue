@@ -1,18 +1,16 @@
 <template>
   <div>
     <Header />
-    <div class="banner-hero-inner">
-      <div class="text-center">
-        <h1 class="display-1">Contatti</h1>
-        <h2>Dobbiamo scrivere qualcosa qui d'impatto</h2>
-      </div>
+    <BannerHero
+      title="Contatti"
+      subTitle="Sarò lieta di rispondere alle tue domande"
+    />
+   
+    <div class="d-flex align-items-center justify-content-center">
+      <Contacts optionsEnabled />
     </div>
 
-    <div class="container mb-5">
-      <div class="container">
-        <Contacts optionsEnabled />
-      </div>
-    </div>
+   
 
     <!-- <Related categoryName="" data-aos="zoom-in" /> -->
     <Footer />

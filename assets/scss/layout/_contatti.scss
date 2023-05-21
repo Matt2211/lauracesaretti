@@ -1,21 +1,47 @@
-.contact-container {
-  height: 100vh;
+.form-wrapper {
   width: 100%;
-  display: flex;
-  align-items: center;
-
-  .profile-photo {
-    height: 100%;
-    background-image: url(~/assets/images/Luara_Cesaretti_Fine_Art_Portrait_Photography.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+  padding: 50px;
 }
 
 
-@media (max-width: 768px) {
-    .contact-container {
-     flex-wrap: wrap;
-    } 
+.form-control {
+  .animated {
+    border: none !important;
+    border-bottom: 1px solid #e3e3e3 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    transition: .5s ease-in-out !important;
+
+    &:focus {
+      outline: none !important;
+      border-bottom: 2px solid #000000 !important;
+      box-shadow: none !important;
+      font-size: 30px;
+    }
+  }
+
+
+  
+
+
+
+
+}
+
+.form-rule {
+  font-size: 10px;
+}
+
+.form-options {
+
+  box-shadow: 2px 2px 6px #e3e3e3;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  transition: .5s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    border: 2px solid #969696;
+    box-shadow: none;
+  }
 }

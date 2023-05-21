@@ -1,13 +1,18 @@
+@import './layout/contatti';
 @import './layout/default';
 @import './layout/galleria';
-@import './layout/contatti';
+@import './layout/terms';
 
 @import './base/fonts';
 
 @import './components/contact';
+@import './components/banner';
 @import './components/header';
+@import './components/header-mobile';
 @import './components/footer';
+@import './components/quote';
 @import './components/related';
+@import './components/related-gallery';
 @import './components/services';
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';

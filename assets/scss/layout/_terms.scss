@@ -1,0 +1,39 @@
+.terms-container-wrapper {
+   max-height: 500px;
+    .terms-container {
+        width: 100%;
+        overflow-y: scroll;
+
+        .terms {
+            list-style: decimal;
+
+            li {
+
+                h6 {
+                    font-weight: 700;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+
+    }
+
+    .terms-form {
+        width: 100%;
+        .terms-member-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px 0;
+        }
+
+        .terms-member {
+            display: flex;
+            flex-direction: column;
+            gap: 10px 0;
+        }
+    }
+}
