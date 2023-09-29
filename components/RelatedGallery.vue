@@ -25,7 +25,7 @@
 
       <button
         v-if="this.length < this.pickGallery.length"
-        class="btn d-flex m-auto btn-outline-dark"
+        class="btn btn-sm d-flex m-auto btn-outline-dark"
         @click="loadMore"
       >
         Mostra altre foto

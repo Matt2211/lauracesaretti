@@ -1,12 +1,11 @@
 <template>
   <div>
-    <Header />
     <BannerHero
       title="Contatti"
       subTitle="Sarò lieta di rispondere alle tue domande"
     />
    
-    <div class="d-flex align-items-center justify-content-center">
+    <div class="container">
       <Contacts optionsEnabled />
     </div>
 

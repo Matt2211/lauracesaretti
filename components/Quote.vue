@@ -1,17 +1,25 @@
 <template>
   <div class="container-fluid">
-    <div class="container">
+    <div class="container main-paragraph">
       <div class="quote-header">
         <h3 class="display-4">Cattura i tuoi momenti</h3>
         <p class="lead">Imprimi il presente nel futuro</p>
       </div>
 
-      <div class="d-flex flex-wrap">
-        <div v-for="quote in showQuote" :key="quote.id" class="quote-pack">
-          <h2>Servzio {{ quote.category }}</h2>
-          <p class="lead font-weight-lighter">
-            A partire da Euro {{ quote.price }}
-          </p>
+      <div class="quote-wrapper">
+        
+
+       <!-- <div class="col-12 col-md-6">
+         <Contacts :categoryName="categoryName" />
+       </div> -->
+
+       <div v-for="quote in showQuote" :key="quote.id" class="col-12 col-md-6">
+        <div class="">
+            <h2>Servzio {{ quote.category }}</h2>
+            <p class="lead font-weight-lighter">
+              A partire da Euro {{ quote.price }}
+            </p>
+        </div>
 
           <ul class="quote-service list-unstyled text-left">
             <li v-for="item in quote.includes" :key="item.id">
@@ -20,17 +28,8 @@
           </ul>
           <!-- <Button @click="show = !show">Richiedi info</Button> -->
         </div>
-
-        <!-- <Contacts :categoryName="categoryName" /> -->
       </div>
     </div>
-
-
-
-
-
-
-
 
     <!-- <div class="container quote-wrapper">
       <div

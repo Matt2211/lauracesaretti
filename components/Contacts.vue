@@ -8,7 +8,7 @@
             type="text"
             name="user_name"
             id="user_name"
-            class="form-control"
+            class="form-control animated"
             placeholder="Nome"
             required
           />
@@ -63,7 +63,7 @@
             :checked="categoryName === 'Fine Art' ? 'checked' : ''"
           />
           <label class="form-check-label" for="FineArt">
-            Maternità Fine Art
+            Maternità
           </label>
         </div>
         <div class="form-check">
@@ -76,7 +76,7 @@
             :checked="categoryName === 'Life Style' ? 'checked' : ''"
           />
           <label class="form-check-label" for="LifeStyle">
-            Maternità Life Style
+           Famiglia
           </label>
         </div>
 

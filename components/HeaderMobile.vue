@@ -5,7 +5,8 @@
   >
     <div v-show="showSubHeader === false" class="header-mobile px-3">
       <NuxtLink to="/"><h4 class="mb-0">Laura Cesaretti</h4></NuxtLink>
-      <div @click="showSubHeader = !showSubHeader">menu</div>
+      <div @click="showSubHeader = !showSubHeader" type="button"><i class="fa-solid fa-bars fa-2x"></i>
+</div>
     </div>
 
     <div
@@ -18,7 +19,7 @@
         @click="showSubHeader = false"
         type="button"
       >
-        X
+      <i class="fa-solid fa-times"></i>
       </div>
 
       <div class="header-mobile-menu-container">
@@ -75,19 +76,19 @@
             <a
               target="_blank"
               href="https://www.instagram.com/lauracesarettiphotography/"
-              >Instagram</a
+              >Instagram <i class="fa-brands fa-instagram"></i></a
             >
           </li>
           <li class="small">
             <a target="_blank" href="https://www.pinterest.com/lauracesarettiph"
-              >Pinterest</a
+              >Pinterest <i class="fa-brands fa-pinterest"></i></a
             >
           </li>
           <li class="small">
             <a
               target="_blank"
               href="https://facebook.com/people/@/lauracesarettiphotography"
-              >Facebook</a
+              >Facebook <i class="fa-brands fa-facebook"></i></a
             >
           </li>
         </ul>

@@ -24,7 +24,7 @@
           class="d-block m-auto ml-md-0 btn-sm"
           >Richiedi Preventivo</b-button
         >
-        <h6>Privacy & Policy</h6>
+        <h6 class="priacy-policy">Privacy & Policy</h6>
         <b-modal
           hide-footer
           id="modal-center-footer"
@@ -59,24 +59,24 @@
 
       <div class="col-12 col-md-3">
         <h6 class="text-dark">Segumi su:</h6>
-        <ul class="footer-list list-unstyled text-dark p-0">
+        <ul class="footer-list social list-unstyled text-dark p-0">
           <li class="small">
             <a
               target="_blank"
               href="https://www.instagram.com/lauracesarettiphotography/"
-              >Instagram</a
+              ><i class="fa-brands fa-instagram"></i></a
             >
           </li>
           <li class="small">
             <a target="_blank" href="https://www.pinterest.com/lauracesarettiph"
-              >Pinterest</a
+              ><i class="fa-brands fa-pinterest"></i></a
             >
           </li>
           <li class="small">
             <a
               target="_blank"
               href="https://facebook.com/people/@/lauracesarettiphotography"
-              >Facebook</a
+              > <i class="fa-brands fa-facebook"></i></a
             >
           </li>
         </ul>

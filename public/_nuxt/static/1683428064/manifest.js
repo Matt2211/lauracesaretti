@@ -1,1 +1,0 @@
-__NUXT_JSONP__("manifest.js", {routes:["\u002Fservizi-fotografici\u002Fbebè","\u002Fchi-sono","\u002F","\u002Fgalleria","\u002Fcontatti","\u002Fservizi-fotografici\u002Ffamiglia","\u002Fservizi-fotografici\u002Fcake-smash","\u002Fservizi-fotografici\u002Fneonato","\u002Fservizi-fotografici\u002Fmaternità"]})
